@@ -18,12 +18,13 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
+
+        //Runner1
         RunnerEntity runnerEntity = new RunnerEntity();
         runnerEntity.setRunnerName("Tomi");
         runnerEntity.setPace(110);
         runnerEntity.setShoeSize(42);
         runnerRepository.save(runnerEntity);
-
 
         LapTimeEntity laptime1 = new LapTimeEntity();
         laptime1.setLapNumber(1);
@@ -40,6 +41,7 @@ public class DataLoader implements CommandLineRunner {
         runnerEntity.getLaptimes().add(laptime1);
         runnerEntity.getLaptimes().add(laptime2);
 
+        //Runner2
         RunnerEntity runnerEntity2 = new RunnerEntity();
         runnerEntity2.setRunnerName("Zsuzsi");
         runnerEntity2.setPace(100);
@@ -60,6 +62,28 @@ public class DataLoader implements CommandLineRunner {
 
         runnerEntity2.getLaptimes().add(laptime3);
         runnerEntity2.getLaptimes().add(laptime4);
+
+        //Runner3
+        RunnerEntity runnerEntity3 = new RunnerEntity();
+        runnerEntity3.setRunnerName("Bela");
+        runnerEntity3.setPace(150);
+        runnerEntity3.setShoeSize(46);
+        runnerRepository.save(runnerEntity3);
+
+        LapTimeEntity laptime5 = new LapTimeEntity();
+        laptime5.setLapNumber(1);
+        laptime5.setTimeSeconds(80);
+        laptime5.setRunner(runnerEntity3);
+        lapTimeRepository.save(laptime5);
+
+        LapTimeEntity laptime6 = new LapTimeEntity();
+        laptime6.setLapNumber(2);
+        laptime6.setTimeSeconds(85);
+        laptime6.setRunner(runnerEntity3);
+        lapTimeRepository.save(laptime6);
+
+        runnerEntity3.getLaptimes().add(laptime5);
+        runnerEntity3.getLaptimes().add(laptime6);
     }
 }
 
