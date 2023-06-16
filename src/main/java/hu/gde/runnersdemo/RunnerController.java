@@ -31,6 +31,8 @@ public class RunnerController {
         model.addAttribute("runnerWithBiggestShoeSize", runnerWithBiggestShoeSize.getRunnerName());
 
         model.addAttribute("averagePace", runnerService.calculateAveragePace());
+
+        model.addAttribute("shoename", shoeRepository.get)
         return "runners";
     }
 
