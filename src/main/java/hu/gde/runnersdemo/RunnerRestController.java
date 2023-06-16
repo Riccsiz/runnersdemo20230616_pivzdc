@@ -14,6 +14,8 @@ public class RunnerRestController {
     @Autowired
     private LapTimeRepository lapTimeRepository;
     private RunnerRepository runnerRepository;
+    @Autowired
+    private ShoeRepository shoeRepository;
 
     @Autowired
     public RunnerRestController(RunnerRepository runnerRepository, LapTimeRepository lapTimeRepository) {

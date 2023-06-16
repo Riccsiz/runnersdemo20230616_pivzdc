@@ -17,9 +17,10 @@ public class RunnerController {
     private RunnerRepository runnerRepository;
     @Autowired
     private LapTimeRepository lapTimeRepository;
-
     @Autowired
     private RunnerService runnerService;
+    @Autowired
+    private ShoeRepository shoeRepository;
 
     @GetMapping("/runners")
     public String getAllRunners(Model model) {
