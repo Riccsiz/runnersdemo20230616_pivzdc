@@ -28,4 +28,8 @@ public class RunnerService {
             return -1.0;
         }
     }
+    public RunnerEntity getRunnerWithBiggestShoeSize() {
+        return runnerRepository.findTopByOrderByShoeSizeDesc();
+    }
+
 }
