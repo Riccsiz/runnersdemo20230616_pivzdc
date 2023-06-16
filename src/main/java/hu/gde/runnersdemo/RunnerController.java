@@ -32,7 +32,7 @@ public class RunnerController {
 
         model.addAttribute("averagePace", runnerService.calculateAveragePace());
 
-        model.addAttribute("shoename", shoeRepository.get)
+        //model.addAttribute("shoename", shoeRepository.get)
         return "runners";
     }
 
