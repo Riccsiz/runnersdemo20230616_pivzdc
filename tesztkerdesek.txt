@@ -1,6 +1,6 @@
-Név:
-Szak:
-Neptun azonosító:
+Név: Bánhalmi Richárd Mátyás
+Szak: Mérnökinformatika - TÁV
+Neptun azonosító: PIVZDC
 
 Kérdés 1:
 Milyen szempontból fontos a clean code?
@@ -10,7 +10,7 @@ B. A szoftver méretének csökkentése
 C. A kód karbantarthatóságának, olvashatóságának és újrafelhasználhatóságának biztosítása
 D. A kód futási idejének minimalizálása
 
-Válasz:
+Válasz: C
 
 Kérdés 2:
 Melyik elem NEM része a Kanban táblának?
@@ -20,7 +20,7 @@ B. WIP limitek
 C. Munkafázisok
 D. Feladat kártyák
 
-Válasz:
+Válasz: A
 
 Kérdés 3:
 Melyik az alábbiak közül NEM egy Agile módszertan?
@@ -30,7 +30,7 @@ B. Waterfall
 C. Scrum
 D. Lean
 
-Válasz:
+Válasz: B
 
 Kérdés 4:
 Mi a Scrum, ami az Agile keretrendszereinek egyike?
@@ -40,7 +40,7 @@ B. Egy fejlesztési ciklus, amely több hétig tart
 C. Egy projektmenedzsment eszköz, amely meghatározza a csapat munkájának struktúráját
 D. Egy technika az adatbázisok optimalizálására
 
-Válasz:
+Válasz: C
 
 Kérdés 5:
 Mit jelent a 'major' verziószám a szoftver verziószámozásában?
@@ -50,7 +50,7 @@ B. Az apróbb hibajavításokat
 C. A jelentős funkcionális változásokat vagy frissítéseket
 D. Az alfa és béta tesztelési fázisokat
 
-Válasz:
+Válasz: C
 
 Kérdés 6:
 Milyen parancsot használhatunk a git commit-ek történetének megtekintésére?
@@ -60,7 +60,7 @@ B. git log
 C. git show
 D. git checkout
 
-Válasz:
+Válasz: B
 
 Kérdés 7:
 Mi a git checkout parancs funkcionalitása?
@@ -70,7 +70,7 @@ B. Létrehoz egy új ágat a git repository-ban
 C. Frissíti a helyi repository-t a távoli repository legújabb változtatásaival
 D. Feltölti a változásokat a távoli repository-ba
 
-Válasz:
+Válasz: A
 
 Kérdés 8:
 Melyik fejlesztői környezetet használják leggyakrabban a fejlesztők a kód írása és tesztelése során?
@@ -80,7 +80,7 @@ B. Integrációs tesztelési környezet (Integration Testing)
 C. Felhasználói elfogadási tesztelési környezet (User Acceptance Testing, UAT)
 D. Fejlesztési környezet (Development)
 
-Válasz:
+Válasz: D
 
 Kérdés 9:
 Mi jellemző a RESTful API-kra?
@@ -90,7 +90,7 @@ B. Csak HTTP-t használnak kommunikációhoz
 C. Alapvetően állapotmentesek, azaz minden kérés minden szükséges információt tartalmaz a feldolgozáshoz
 D. Csak XML formátumot használnak az adatátvitelhez
 
-Válasz:
+Válasz: C
 
 Kérdés 10:
 Melyik HTTP metódus felel meg a "Read" műveletnek a RESTful API-kban?
@@ -100,4 +100,4 @@ B. PUT
 C. POST
 D. DELETE
 
-Válasz:
+Válasz: A

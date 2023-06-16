@@ -18,7 +18,7 @@ public class RunnerEntity {
 
     @ManyToOne
     @JoinColumn(name="shoe_id")
-    private ShoeEntity shoeEntity;
+    private ShoeEntity shoe;
 
 
     public RunnerEntity() {
@@ -56,4 +56,7 @@ public class RunnerEntity {
 
     public void setShoeSize(int shoeSize) { this.shoeSize = shoeSize; }
 
+    public String getShoeName() {
+        return shoe.getShoeName();
+    }
 }
