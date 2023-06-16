@@ -72,4 +72,15 @@ public class RunnerRestController {
             this.lapTimeSeconds = lapTimeSeconds;
         }
     }
+    @GetMapping("/biggestshoesize")
+    public String getRunnerWithBiggestShoeSize() {
+        RunnerEntity runner = runnerRepository.findTopByOrderByShoeSizeDesc();
+        if (runner != null) {
+            return runner.getRunnerName();
+        } else {
+            return "No runner found";
+        }
+    }
+
 }
+

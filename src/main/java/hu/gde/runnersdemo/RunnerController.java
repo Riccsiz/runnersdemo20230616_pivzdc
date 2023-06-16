@@ -17,10 +17,15 @@ public class RunnerController {
     private RunnerRepository runnerRepository;
     @Autowired
     private LapTimeRepository lapTimeRepository;
+
     @GetMapping("/runners")
     public String getAllRunners(Model model) {
         List<RunnerEntity> runners = runnerRepository.findAll();
         model.addAttribute("runners", runners);
+
+        RunnerEntity runnerWithBiggestShoeSize = runnerRepository.findTopByOrderByShoeSizeDesc();
+        model.addAttribute("runnerWithBiggestShoeSize", runnerWithBiggestShoeSize.getRunnerName());
+
         return "runners";
     }
 
