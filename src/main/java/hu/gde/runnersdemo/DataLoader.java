@@ -23,15 +23,15 @@ public class DataLoader implements CommandLineRunner {
 
         //Runner1
 
-        ShoeEntity shoeEntity = new ShoeEntity();
-        shoeEntity.setShoeName("Nike");
-        shoeRepository.save(shoeEntity);
-
         RunnerEntity runnerEntity = new RunnerEntity();
         runnerEntity.setRunnerName("Tomi");
         runnerEntity.setPace(110);
         runnerEntity.setShoeSize(42);
         runnerRepository.save(runnerEntity);
+
+        ShoeEntity shoeEntity = new ShoeEntity();
+        shoeEntity.setShoeName("Nike");
+        shoeRepository.save(shoeEntity);
 
         LapTimeEntity laptime1 = new LapTimeEntity();
         laptime1.setLapNumber(1);
@@ -55,6 +55,10 @@ public class DataLoader implements CommandLineRunner {
         runnerEntity2.setShoeSize(39);
         runnerRepository.save(runnerEntity2);
 
+        ShoeEntity shoeEntity2 = new ShoeEntity();
+        shoeEntity2.setShoeName("Puma");
+        shoeRepository.save(shoeEntity2);
+
         LapTimeEntity laptime3 = new LapTimeEntity();
         laptime3.setLapNumber(1);
         laptime3.setTimeSeconds(95);
@@ -76,6 +80,10 @@ public class DataLoader implements CommandLineRunner {
         runnerEntity3.setPace(150);
         runnerEntity3.setShoeSize(46);
         runnerRepository.save(runnerEntity3);
+
+        ShoeEntity shoeEntity3 = new ShoeEntity();
+        shoeEntity3.setShoeName("Adidas");
+        shoeRepository.save(shoeEntity3);
 
         LapTimeEntity laptime5 = new LapTimeEntity();
         laptime5.setLapNumber(1);
