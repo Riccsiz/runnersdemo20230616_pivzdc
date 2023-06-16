@@ -18,6 +18,9 @@ public class RunnerController {
     @Autowired
     private LapTimeRepository lapTimeRepository;
 
+    @Autowired
+    private RunnerService runnerService;
+
     @GetMapping("/runners")
     public String getAllRunners(Model model) {
         List<RunnerEntity> runners = runnerRepository.findAll();
@@ -26,6 +29,7 @@ public class RunnerController {
         RunnerEntity runnerWithBiggestShoeSize = runnerRepository.findTopByOrderByShoeSizeDesc();
         model.addAttribute("runnerWithBiggestShoeSize", runnerWithBiggestShoeSize.getRunnerName());
 
+        model.addAttribute("averagePace", runnerService.calculateAveragePace());
         return "runners";
     }
 

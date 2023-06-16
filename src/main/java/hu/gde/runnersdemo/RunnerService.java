@@ -28,8 +28,16 @@ public class RunnerService {
             return -1.0;
         }
     }
-    public RunnerEntity getRunnerWithBiggestShoeSize() {
-        return runnerRepository.findTopByOrderByShoeSizeDesc();
+    //public RunnerEntity getRunnerWithBiggestShoeSize() {
+     //   return runnerRepository.findTopByOrderByShoeSizeDesc();
+    //}
+    public double calculateAveragePace() {
+        List<RunnerEntity> runners = runnerRepository.findAll();
+        double totalPace = 0.0;
+        for (RunnerEntity runner : runners) {
+            totalPace += runner.getPace();
+        }
+        return runners.isEmpty() ? 0.0 : totalPace / runners.size();
     }
 
 }
